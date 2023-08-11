@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+/* main container */
+.flex-container {
+  margin: 20px auto;
+  width: 95%;
+  max-width: 915px;
+  display: flex;
+  flex-wrap: wrap; /* makes responsive */
+}
+
+/* columns */
+.flex-container > * {
+  width: 100%;
+}
+
+.col-1 {
+  background-color: hsl(31, 77%, 52%);
+  padding: 50px;
+  border-radius: 10px 10px 0 0;
+}
+.col-2 {
+  background-color: hsl(184, 100%, 22%);
+  padding: 50px;
+}
+.col-3 {
+  background-color: hsl(179, 100%, 13%);
+  padding: 50px;
+  border-radius: 0 0 10px 10px;
+}
+
+h1 {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  padding: 40px 0;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 2;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+  min-width: 150px;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 30px;
+  padding: 16px 30px;
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+  border-radius: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-1 a {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-1:hover,
+.btn-2:hover,
+.btn-3:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-1:hover > a,
+.btn-2:hover > a,
+.btn-3:hover > a {
+  color: hsl(0, 0%, 95%);
+}
+
+.btn-2 a {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-3 a {
+  color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* common media enquiry widths to use: 320px, 480px, 600px, 768px, 900px, 1024px, 1200px */
+
+@media (min-width: 600px) {
+  .flex-container {
+    width: 60%;
+  }
+  .col-1 {
+    border-radius: 10px 10px 0 0;
+  }
+  .col-3 {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flex-container {
+    width: 70%;
+  }
+  .flex-container > * {
+    width: calc(100% / 3);
+  }
+  .col-1 {
+    border-radius: 10px 0 0 10px;
+  }
+  .col-3 {
+    border-radius: 0 10px 10px 0;
+  }
+  button {
+    margin-top: 80px;
+  }
+}
