@@ -5,6 +5,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 ## Table of contents
 
 - [Overview](#overview)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -14,6 +15,11 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
+
+### Screenshots
+
+![](./screenshots/full-page.png)
+![](./screenshots/mobile.png)
 
 ### Links
 
